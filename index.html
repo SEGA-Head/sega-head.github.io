@@ -170,13 +170,67 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Creating photorealistic 3D head avatars from limited input has become increasingly important for applications in virtual reality, telepresence, and digital entertainment. While recent advances like neural rendering and 3D Gaussian splatting have enabled high-quality digital human avatar creation and animation, 
+most methods rely on multiple images or multi-view inputs, limiting their practicality for real-world use.
+In this paper, we propose <b>SEGA</b>, a novel approach for <b>S</b>ingle-imag<b>E</b>-based 3D drivable <b>G</b>aussian head <b>A</b>vatar creation that combines generalized prior models with a new hierarchical UV-space Gaussian Splatting framework.
+SEGA seamlessly combines priors derived from large-scale 2D datasets with 3D priors learned from multi-view, multi-expression, and multi-ID data, achieving robust generalization to unseen identities while ensuring 3D consistency across novel viewpoints and expressions.
+We further present a hierarchical UV-space Gaussian Splatting framework that leverages FLAME-based structural priors and employs a dual-branch architecture to disentangle dynamic and static facial components effectively.
+The dynamic branch encodes expression-driven fine details, while the static branch focuses on expression-invariant regions, enabling efficient parameter inference and pre-computation.
+This design maximizes the utility of limited 3D data and achieves real-time performance for animation and rendering.
+Additionally, SEGA performs person-specific fine-tuning to further enhance the fidelity and realism of the generated avatars.
+Experiments show our method outperforms state-of-the-art approaches in generalization ability, identity preservation, and expression realism, advancing one-shot avatar creation for practical applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="#" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Network Architecture</h2>
+
+        <div class="columns is-vcentered interpolation-panel">
+            <img src="./static/images/Pipeline-new.png"
+                 class="network-image"
+                 alt="Ours pipeline."/>
+          </div>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <!--/ Animation. -->
+</section>
 <div class="columns is-centered has-text-centered">
   <h2 class="title is-3">Video Results</h2>
 </div>
 
 
 <div class="columns is-centered has-text-centered">
-  <h2 class="title is-4">1-shot</h2>
+
 </div>
 
 
